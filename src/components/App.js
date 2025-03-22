@@ -5,7 +5,10 @@ import './../styles/App.css';
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+         <p>Enter your name:</p>
+    <input value={input} onChange={onInput} />
+    {!!input.length&&<p>Hello {input}!</p>}
+    <button onClick={onClear}>Clear</button>
     </div>
   )
 }
